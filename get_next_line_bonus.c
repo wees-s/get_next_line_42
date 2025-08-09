@@ -6,13 +6,13 @@
 /*   By: wedos-sa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 14:00:01 by wedos-sa          #+#    #+#             */
-/*   Updated: 2025/08/08 18:35:43 by wedos-sa         ###   ########.fr       */
+/*   Updated: 2025/08/09 10:39:43 by wedos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-static size_t	count_stash(char *stash)
+size_t	count_stash(char *stash)
 {
 	size_t	i;
 
@@ -24,7 +24,7 @@ static size_t	count_stash(char *stash)
 	return (i);
 }
 
-static char	*ft_stralloc(const char *s1)
+char	*ft_stralloc(const char *s1)
 {
 	char	*s2;
 	size_t	size;
@@ -37,7 +37,7 @@ static char	*ft_stralloc(const char *s1)
 	return (s2);
 }
 
-static char	*free_all(char **buffer, char **stash)
+char	*free_all(char **buffer, char **stash)
 {
 	if ((buffer && *buffer) && (stash && *stash))
 	{
@@ -49,7 +49,7 @@ static char	*free_all(char **buffer, char **stash)
 	return (NULL);
 }
 
-static char	*finalize_line(char **stash, char **buffer)
+char	*finalize_line(char **stash, char **buffer)
 {
 	char	*res;
 	char	*temp;

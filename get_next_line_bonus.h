@@ -6,7 +6,7 @@
 /*   By: wedos-sa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 10:53:26 by wedos-sa          #+#    #+#             */
-/*   Updated: 2025/08/08 18:42:51 by wedos-sa         ###   ########.fr       */
+/*   Updated: 2025/08/09 10:38:49 by wedos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ char				*ft_strdup(const char *s1);
 size_t				ft_strlcpy(char *dst, const char *src, size_t size);
 char				*ft_strjoin(char const *s1, char const *s2);
 void				*ft_calloc(size_t count, size_t size);
-static char			*finalize_line(char **stash, char **buffer);
-static char			*free_all(char **buffer, char **stash);
-static size_t		count_stash(char *stash);
+char				*finalize_line(char **stash, char **buffer);
+char				*free_all(char **buffer, char **stash);
+size_t				count_stash(char *stash);
 
 #endif
