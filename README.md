@@ -1,3 +1,5 @@
+<img width="2000" height="1000" alt="image" src="https://github.com/user-attachments/assets/649ce55d-ee8e-4c0c-8412-c4c60a8fe189" />
+
 # get_next_line
 
 A function that reads a single line from a file descriptor, implementing efficient file reading as part of the 42 School curriculum.
